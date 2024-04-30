@@ -39,7 +39,7 @@ class scanMerger : public rclcpp::Node
         sub2_ = this->create_subscription<sensor_msgs::msg::LaserScan>(topic2_, default_qos, std::bind(&scanMerger::scan_callback2 , this, std::placeholders::_1));
         
         point_cloud_pub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>(cloudTopic_, rclcpp::SystemDefaultsQoS());
-        RCLCPP_INFO(this->get_logger(), "Hello");
+        RCLCPP_INFO(this->get_logger(), "ScanMerger node activation..");
     }
     private:
     void scan_callback1(const sensor_msgs::msg::LaserScan::SharedPtr _msg) {
