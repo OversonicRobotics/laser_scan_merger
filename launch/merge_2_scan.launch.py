@@ -26,7 +26,9 @@ def generate_launch_description():
         'laser1ZOff': LaunchConfiguration('laser1ZOff'),
         'laser2XOff': LaunchConfiguration('laser2XOff'),
         'laser2YOff': LaunchConfiguration('laser2YOff'),
-        'laser2ZOff': LaunchConfiguration('laser2ZOff')}
+        'laser2ZOff': LaunchConfiguration('laser2ZOff'),
+        'use_sim_time': LaunchConfiguration('use_sim_time')
+    }
     # todo https://github.com/ros-planning/navigation2/blob/6a0c92cad7fb8bb1e3e8500742bc293cddbedc36/nav2_system_tests/src/costmap_filters/test_speed_launch.py#L46-L54
 
     configured_params = ParameterFile(
