@@ -20,6 +20,14 @@ def generate_launch_description():
         'params.yaml'
     )
     param_substitutions = {
+        'flip1': LaunchConfiguration('flip1'),
+        'flip2': LaunchConfiguration('flip2'),
+        'laser1Alpha': LaunchConfiguration('laser1Alpha'),
+        'laser2Alpha': LaunchConfiguration('laser2Alpha'),
+        'laser1AngleMin': LaunchConfiguration('laser1AngleMin'),
+        'laser1AngleMax': LaunchConfiguration('laser1AngleMax'),
+        'laser2AngleMin': LaunchConfiguration('laser2AngleMin'),
+        'laser2AngleMax': LaunchConfiguration('laser2AngleMax'),
         'laser1XOff': LaunchConfiguration('laser1XOff'),
         'laser1YOff': LaunchConfiguration('laser1YOff'),
         'laser1ZOff': LaunchConfiguration('laser1ZOff'),
